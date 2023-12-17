@@ -1,0 +1,16 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json", // estendemos a configuração base para o Node 16
+  "exclude": ["tests/**"],
+  "compilerOptions": {
+    "target": "es2016",                                 
+    "module": "Node16",
+    "rootDirs": ["./src", "./tests"],
+    "outDir": "./build",
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
+  }
+}

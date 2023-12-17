@@ -1,0 +1,29 @@
+{
+  "name": "crypto-monitor",
+  "version": "1.0.0",
+  "description": "Crypto Monitor Backend",
+  "main": "build/server.js",
+  "scripts": {
+    "start": "tsc && node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leobmend/crypto-monitor-back.git"
+  },
+  "author": "leobmend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leobmend/crypto-monitor-back/issues"
+  },
+  "homepage": "https://github.com/leobmend/crypto-monitor-back#readme",
+  "dependencies": {
+    "@tsconfig/node16": "^16.1.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.56.0"
+  }
+}

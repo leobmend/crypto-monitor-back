@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+  node:
+    build: .
+    volumes: 
+      - ./:/app
+    container_name: node-crypto-monitor
+    tty: true
+    stdin_open: true
+    command: /bin/sh
+    restart: always
+    environment:
+      - PORT=3002
+      - JWT_SECRET=secretJWT
+    ports:
+      - 3002:3002
+
+networks:
+  default:
+    name: crypto_monitor_net
