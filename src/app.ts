@@ -1,5 +1,4 @@
-import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js";
-import { fromLamportsToSol } from './utils/cryptoHelper';
+import { Connection, PublicKey, clusterApiUrl, LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 const main = async (port: string): Promise<void> => {
 
@@ -8,7 +7,7 @@ const main = async (port: string): Promise<void> => {
     const lamports = await connection.getBalance(address);
     
     console.log(`\nThe balance of the account at ${address} is ${lamports} lamports`); 
-    console.log(`\nIn other words, that account has ${fromLamportsToSol(lamports)} SOL`)
+    console.log(`\nIn other words, that account has ${lamports / LAMPORTS_PER_SOL} SOL`)
 }
 
 export default main;
